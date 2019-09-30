@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+//    "outDir": "./dist/", 由webpack打包输出
+    "noImplicitAny": true,
+    "module": "es2015",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016"
+    ]
+    //    "esModuleInterop": true
+  },
+  "include": [
+    "src/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
