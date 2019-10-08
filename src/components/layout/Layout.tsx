@@ -1,14 +1,17 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
-import {
-  // Button, Link, TextField, FormControl, Input, InputLabel,
-  Box,
-} from '@material-ui/core';
-import indexStyle from './style';
+import { Box } from '@material-ui/core';
 
-const useStyle = makeStyles(indexStyle);
+import layoutStyle from './style';
 
-const Index: React.FC = () => {
+interface InterfaceLayout {
+  preView: React.ReactNode,
+}
+
+const useStyle = makeStyles(layoutStyle);
+
+const Layout: React.FC<InterfaceLayout> = (props) => {
+  const { children, preView } = props;
   const classes = useStyle();
   return (
     <Box
@@ -21,21 +24,19 @@ const Index: React.FC = () => {
         flexDirection="column"
         width={360}
         mr={1.25} // 1.25 * 8 = 10; 8 是默认的密度 单位
-        color="primary.contrastText"
         bgcolor="primary.800"
+        color="primary.contrastText"
       >
-        <Box>1</Box>
-        <Box flexGrow={1}>2</Box>
-        <Box>3</Box>
+        {children}
       </Box>
       <Box
         flexGrow={1}
         p={3}
       >
-        <span className={classes.root}>s</span>
+        {preView}
       </Box>
     </Box>
   );
 };
 
-export default Index;
+export default Layout;

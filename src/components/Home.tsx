@@ -1,8 +1,8 @@
-import React from "react";
-import { Button, Input } from "@material-ui/core";
+import React from 'react';
+import { Button, Input } from '@material-ui/core';
 
-import Account from "./Account";
-import Detail from "./Detail";
+import Account from './Account';
+import Detail from './Detail';
 
 const { useEffect, useState } = React;
 
@@ -12,13 +12,13 @@ export interface HelloProps {
   framework: string;
 }
 
-const Home: React.FC<HelloProps> = props => {
+const Home: React.FC<HelloProps> = (props) => {
   const { compiler, framework, children } = props;
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
-    console.log("this is useEffect 啊哈哈");
-    console.log("2221");
+    console.log('this is useEffect 啊哈哈');
+    console.log('2221');
   }, []);
 
   const handleClickAdd = (e: React.MouseEvent<HTMLButtonElement>): void => {
