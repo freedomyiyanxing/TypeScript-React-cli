@@ -9,6 +9,7 @@ yarn.lock
 .vscode/
 dist/
 static/
+node_modules/
 
 # Runtime data
 pids
