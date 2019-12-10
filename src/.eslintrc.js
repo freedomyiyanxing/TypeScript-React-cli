@@ -12,6 +12,8 @@ module.exports = {
     'react/jsx-filename-extension': [1, {
       'extensions': ['.js', '.jsx', '.tsx'],
     }],
+    'react/state-in-constructor': 0,
+    'import/extensions': 0,
     'react/prop-types': 0, // 使用 typescript 编写, 不需要 prop-types
     'import/no-unresolved': 0, // 允许 import 时 不带文件后缀名
     'jsx-a11y/anchor-is-valid': 0,

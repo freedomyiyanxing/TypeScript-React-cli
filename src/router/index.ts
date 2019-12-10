@@ -1,6 +1,6 @@
 import uuid from 'uuid';
-import Section from '../pages/section/section';
-import ThemeSetting from '../pages/theme-setting/theme-setting';
+import Section from '@my-pages/section';
+import Index from '@my-pages/theme-setting';
 
 const routers = [
   {
@@ -12,7 +12,7 @@ const routers = [
   {
     path: '/theme-setting',
     exact: true,
-    component: ThemeSetting,
+    component: Index,
     key: uuid(),
   },
 ];
