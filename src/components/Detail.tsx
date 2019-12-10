@@ -15,7 +15,7 @@ interface DetailProps {
   id: number;
 }
 
-const Detail: React.FC<DetailProps> = props => {
+const Detail: React.FC<DetailProps> = (props) => {
   const { children, id } = props;
   return (
     <div>

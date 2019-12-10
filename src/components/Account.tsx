@@ -6,7 +6,7 @@ interface AccountProps {
   email: string;
 }
 
-const Account: React.FC<AccountProps> = props => {
+const Account: React.FC<AccountProps> = (props) => {
   const { name, email } = props;
   return (
     <div>
