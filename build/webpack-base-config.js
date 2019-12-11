@@ -61,7 +61,7 @@ module.exports = {
             loader: "babel-loader", // https://babeljs.io/docs/en/usage
             options: {
               babelrc: false, // 不读取.babelrc文件
-              configFile: path.join(__dirname, "../babel/index.js") // 引用配置文件
+              configFile: path.join(__dirname, "../babel/index.tsx") // 引用配置文件
             }
           }
         ]

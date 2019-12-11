@@ -1,17 +1,11 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
 
-const PreView: React.FC = () => {
-  const classes = () => {
-  };
+const PreView: React.FC = () => (
+  <Box>
+    Preview
+  </Box>
+);
 
-  console.log(classes);
-
-  return (
-    <Box>
-      Preview
-    </Box>
-  );
-};
 
 export default PreView;

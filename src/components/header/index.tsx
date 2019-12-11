@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   const handleChange = function(event: React.ChangeEvent<{}>): void {
     console.log(event.currentTarget);
     // setValue(newVale);
-  }
+  };
 
   return (
     <div style={{ display: 'flex', width: '100%', height: 50 }}>

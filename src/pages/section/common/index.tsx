@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import LinkRouter from '@my-common/material-ui/links';
+import LinkRouter from '../../../common/material-ui/links';
 
 interface IProps {
-  str?: string
+  str: string
+  func: (e: React.ChangeEvent<HTMLInputElement>) => void
+  name?: string
 }
 
 interface IState {
@@ -29,13 +31,18 @@ class Common extends Component<IProps, IState> {
 
 
   render(): React.ReactElement<React.JSXElementConstructor<any>> {
+    const { str, func } = this.props;
     const { count } = this.state;
     return (
-      <div>
-        <h2>哈哈哈</h2>
-        <span>{count}</span>
+      <div className="hahhahahahaha">
+        <h2>
+          哈哈哈
+          {str}
+        </h2>
+        <span className="spana">{count}</span>
         <LinkRouter to="/theme-setting">跳转</LinkRouter>
         <button type="button" onClick={this.handleClick}>点击一下</button>
+        <input type="text" onChange={func} />
       </div>
     );
   }

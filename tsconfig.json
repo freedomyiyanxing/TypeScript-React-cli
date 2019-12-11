@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-//    "outDir": "./dist/", 由webpack打包输出
+    //    "outDir": "./dist/", 由webpack打包输出
     "noImplicitAny": true,
     "module": "es2015",
     "target": "es5",
@@ -11,19 +11,33 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
+    "esModuleInterop": true,
     "lib": [
       "dom",
       "es2015",
       "es2016"
     ],
     "baseUrl": ".",
-    "paths": { // 配置webpack 路径别名 ts文档 https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
-      "@my-common/*": ["./src/common/*"],
-      "@my-base/*": ["./src/base/*"],
-      "@my-components/*": ["./src/components/*"],
-      "@my-router/*": ["./src/router/*"],
-      "@my-store/*": ["./src/store/*"],
-      "@my-pages/*": ["./src/pages/*"]
+    "paths": {
+      // 配置webpack 路径别名 ts文档 https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
+      "@my-common/*": [
+        "./src/common/*"
+      ],
+      "@my-base/*": [
+        "./src/base/*"
+      ],
+      "@my-components/*": [
+        "./src/components/*"
+      ],
+      "@my-router/*": [
+        "./src/router/*"
+      ],
+      "@my-store/*": [
+        "./src/store/*"
+      ],
+      "@my-pages/*": [
+        "./src/pages/*"
+      ]
     }
   },
   "include": [
